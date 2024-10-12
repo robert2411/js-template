@@ -1,0 +1,15 @@
+{
+  "name": "js-template",
+  "description": "simple js basic template",
+
+  "scripts": {
+    "check-types": "tsc --project ./jsconfig.json",
+    "generate-types": "tsc src/number.js --allowJs --declaration --emitDeclarationOnly --outDir dist",
+    "test": "npm run check-types && jest"
+  },
+
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "typescript": "^5.4.5"
+  }
+}
